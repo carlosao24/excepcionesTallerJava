@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <!-- Appender de consola: muestra los logs en la consola de Eclipse -->
+    <appender name="CONSOLA" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%-5level] %logger{20} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Nivel global: "info" muestra los log.info, log.warn y log.error -->
+    <root level="info">
+        <appender-ref ref="CONSOLA" />
+    </root>
+
+</configuration>
